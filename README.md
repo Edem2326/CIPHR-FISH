@@ -56,7 +56,7 @@ Adade, EE, Wang, R., Henebery, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.
 ### Acknowledgments
 This work was funded by National Institute of Health (NIH) grant R01DE030927 to AMV. The Zeiss LSM 980 multispectral confocal microscope at the University at Albany was funded by the Office of the Director, NIH, under Award Number S10OD028600. D.P.P was funded by the program ‘‘Integrative Biology of Emerging Infectious Diseases’’ (grant ANR-10-LABX-62-IBEID). 
 
-We thank [Ruogu Wang](/WANGRUOGU) and Alex A Lemus for discussions and technical assistance.
+We thank [Ruogu Wang](/https://github.com/WANGRUOGU) and Alex A Lemus for discussions and technical assistance.
 
 ### Licensing
 This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). Commercial use requires explicit written permission from the authors.
