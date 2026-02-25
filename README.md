@@ -12,7 +12,7 @@ Adade, EE, Wang, R., Henebery, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.
 *CIPHR-FISH is a multiplex fluorescence in situ hybridization (FISH)* framework designed to enhance phylogenetic resolution in spatial microbial imaging. Rather than treating probe cross-hybridization and spectral overlap as noise, CIPHR-FISH leverages structured signal patterns across multiplex probe panels to improve discrimination among closely related bacterial taxa.
 
 -------------------------------------------------------------
-### STEP by STEP
+# STEP by STEP
 
 - Download the MATLAB scripts: Place all the code files in a named folder, *Eg. "Training" or "Test" or "Reference"*
 
