@@ -1,4 +1,4 @@
-# Cross-Hybridization-Inference-for-Phylogenetic-Resolution-CIPHR---FISH
+# Cross Hybridization Inference for Phylogenetic Resolution (CIPHR) - FISH
 
 
 This repository contians the codes, scripts and example reference and test images for implementing CIPHR-FISH analysis workflows and reproduce figures in the manuscript.
