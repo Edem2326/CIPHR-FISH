@@ -21,7 +21,7 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 #### Image Preprocessing in *FIJI is just ImageJ (v1.54p)*
 1. Concatenate all the channels into 1 file (82 channels, depending on your imaging dataset)
 2. Save the new image
-3. To the training data set (50 x 50 pixels) and test dataset, apply a median filter or radius 2.0 to suppress noise
+3. To the training data set (50 x 50 pixels) and test dataset (300 x 300 pixels), apply a median filter or radius 2.0 to suppress noise
 4. Make an MIP of the image and threshold to produce a banary mask.
 
 - Sample dataset here: [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620)
