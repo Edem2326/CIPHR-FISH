@@ -4,7 +4,7 @@
 This repository contians the codes, scripts and example reference and test images for implementing CIPHR-FISH analysis workflows and reproduce figures in the manuscript.
 
 ### To cite this work
-Adade, EE, Wang, R., Henebery, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.,Audrain, B., Orsino, A., Farnsworth, D., Ghigo, J-M., Valm, AM. (2026) Cross Hybridization Inference for Phylogenetic Resolution (CIPHR)- FISH enables microbiome imaging with strain level taxonomic resolution ......
+Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.,Audrain, B., Orsino, A., Farnsworth, D., Ghigo, J-M., Valm, AM. (2026) Cross Hybridization Inference for Phylogenetic Resolution (CIPHR)- FISH enables microbiome imaging with strain level taxonomic resolution ......
 
 ### Overview
 *CIPHR-FISH is a multiplex fluorescence in situ hybridization (FISH)* framework designed to enhance phylogenetic resolution in spatial microbial imaging. Rather than treating probe cross-hybridization and spectral overlap as noise, CIPHR-FISH leverages structured signal patterns across multiplex probe panels to improve discrimination among closely related bacterial taxa.
