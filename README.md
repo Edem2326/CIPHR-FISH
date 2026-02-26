@@ -16,7 +16,7 @@ Adade, EE, Wang, R., Henebery, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.
 
 - Download the data: Download the dataset and place it in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620). 
 
-- Save in the same folder/directory (locally) to implement the testdata.
+- *Save in the same folder/directory (locally) to implement the testdata.*
 
 #### Image Preprocessing in *FIJI is just ImageJ (v1.54p)*
 1. Concatenate all the channels into 1 file (82 channels, depending on your imaging dataset)
@@ -52,11 +52,11 @@ Adade, EE, Wang, R., Henebery, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.
 ----------------------------------------------------------------------
 ### Contributors
 - [Emmanuel Edem Adade](/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implemetation
-- [Colin M Henneberry](/cmhen) – Writing code & algorithm development
+- [Colin M Henneberry](/cmhen) – Conceptualization, writing code & algorithm development
 - Alex Valm – Conceptualization & Supervision 
 
 ### Acknowledgments
-This work was funded by National Institute of Health (NIH) grant R01DE030927 to AMV. The Zeiss LSM 980 multispectral confocal microscope at the University at Albany was funded by the Office of the Director, NIH, under Award Number S10OD028600. D.P.P was funded by the program ‘‘Integrative Biology of Emerging Infectious Diseases’’ (grant ANR-10-LABX-62-IBEID). 
+This work was funded by National Institute of Health (NIH) grant R01DE030927 to AMV. D.P.P was funded by the program ‘‘Integrative Biology of Emerging Infectious Diseases’’ (grant ANR-10-LABX-62-IBEID). 
 
 We thank [Ruogu Wang](https://github.com/WANGRUOGU) and Alex A Lemus for discussions and technical assistance.
 
