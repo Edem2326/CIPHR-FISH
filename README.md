@@ -25,7 +25,7 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 4. Make an MIP of the image and threshold to produce a banary mask.
 
 - Sample dataset here: [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620)
---------------------------------------------------------------
+------------------------------------------------------------------
 #### Training and model generation in *MATLAB*
 5. Use these functions to read your image files and extract your foreground pixels
    
@@ -37,7 +37,7 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 7. Down the Classifiication learner from the Machine Learning and Deep Learning Toolkit for MATLAB App
 8. Upload the data and,train your SVM model generated from your reference dataset. Used the Bayesian Opimization over 30 iteration with 5 corss validation. or use this classifier here"
 [run_train_model.m](/run_train_model.m) - A function for generating the model
-10. The model will be exported in your output directory your training model as a [trainedModel.mat](/trainedModel.mat) file.
+10. The model will be exported in your output directory your training model as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
 #### CIPHR Classification in *MATLAB*
 11. Load up this model to the workspace and apply it to classify the test images.
@@ -47,12 +47,10 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 ### Image postprocessing and color assigments in *FIJI*
 13. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification
 
-[taxonspecificabundance.m](/taxonspecificabundance.m) - For taxon density heatmap
-
 ----------------------------------------------------------------------
 ### Contributors
-- [Emmanuel Edem Adade](/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implemetation
-- [Colin M Henneberry](/cmhen) – Conceptualization, writing code & algorithm development
+- [Emmanuel Edem Adade](https://github.com/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implemetation
+- [Colin M Henneberry](https://github.com/cmhen) – Conceptualization, writing code & algorithm development
 - Alex Valm – Conceptualization & Supervision 
 
 ### Acknowledgments
