@@ -35,7 +35,7 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 
 6. The output table (predictors and 10 unques classes)is exported into a seperate output folder in the directory.
 7. Down the Classifiication learner from the Machine Learning and Deep Learning Toolkit for MATLAB App
-8. Upload the data and,train your SVM model generated from your reference dataset. Used the Bayesian Opimization over 30 iteration with 5 corss validation. or use this classifier here"
+8. Upload the data and,train your SVM model generated from your reference dataset. Used the Bayesian Opimization over 30 iteration with 5 corss validation or use this classifier here:
 [run_train_model.m](/run_train_model.m) - A function for generating the model
 10. The model will be exported in your output directory your training model as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
