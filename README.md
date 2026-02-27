@@ -17,7 +17,7 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 - Download the data: Download the dataset and place it in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620). 
 
 - *Save in the same folder/directory (locally) to implement the testdata.*
-
+-------------------------------------------------------------
 #### Image Preprocessing in *FIJI is just ImageJ (v1.54p)*
 1. Concatenate all the channels into 1 file (82 channels, depending on your imaging dataset)
 2. Save the new image
