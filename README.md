@@ -37,15 +37,17 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 7. Down the Classifiication learner from the Machine Learning and Deep Learning Toolkit for MATLAB App
 8. Upload the data and,train your SVM model generated from your reference dataset. Used the Bayesian Opimization over 30 iteration with 5 corss validation or use this classifier here:
 [run_train_model.m](/run_train_model.m) - A function for generating the model
-10. The model will be exported in your output directory your training model as a `trainedModel.mat` file.
+9. The model will be exported in your output directory your training model as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
 #### CIPHR Classification in *MATLAB*
-11. Load up this model to the workspace and apply it to classify the test images.
+10. Load up this model to the workspace and apply it to classify the test images.
+
 [predict_image.m](/predict_image.m) - for classiyfing the test image
-12. Image outputs 10 independent channels (each representing one microbial taxa)
+
+11. Image outputs 10 independent channels (each representing one microbial taxa)
 
 ### Image postprocessing and color assigments in *FIJI*
-13. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification
+12. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification
 
 ----------------------------------------------------------------------
 ### Contributors
