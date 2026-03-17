@@ -1,7 +1,7 @@
 # Cross Hybridization Inference for Phylogenetic Resolution (CIPHR)-FISH
 
 
-This repository contians the codes, scripts and example reference and test images for implementing CIPHR-FISH analysis workflows and reproduce figures in the manuscript.
+This repository contians the codes, scripts and links to reference and test images for implementing CIPHR-FISH analysis workflows and reproduce figures in the manuscript.
 
 ### To cite this work
 Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, D.,Audrain, B., Orsino, A., Farnsworth, D., Ghigo, J-M., Valm, AM. (2026) Cross Hybridization Inference for Phylogenetic Resolution (CIPHR)- FISH enables microbiome imaging with strain level taxonomic resolution ......
@@ -55,8 +55,6 @@ Adade, EE, Wang, R., Henneberry, CM.,Lemus, AA., Stevick, R.J., Pérez-Pascual, 
 - [Colin M Henneberry](https://github.com/cmhen) – Conceptualization, writing code & algorithm development
 - Alex Valm – Conceptualization & Supervision 
 
-### Acknowledgments
-This work was funded by National Institute of Health (NIH) grant R01DE030927 to AMV. D.P.P was funded by the program ‘‘Integrative Biology of Emerging Infectious Diseases’’ (grant ANR-10-LABX-62-IBEID). 
 
 We thank [Ruogu Wang](https://github.com/WANGRUOGU) and Alex A Lemus for discussions and technical assistance.
 
