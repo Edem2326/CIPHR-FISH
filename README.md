@@ -33,6 +33,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multiple tiff files in the data set
 
 2. Load/Read reference images as multiTifffiles (E.g. Acav_train_M2_new, Aver1_train_M2_new,....).
+   
 3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....).
 
 4.Use this code to extract the foreground pixel information into an array and add the label. 
@@ -40,12 +41,16 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 [build_training_set.m](/build_training_set.m) - a function for extracting and saving all your training data set and compiling it not a single table/matrix for model training.
    
 5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...).
+ 
 6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
 
 #### B. Model generation
 7. Upload the training dataset (reference) into your workspace.
+   
 8. In the app menu, select classification learner app.
+ 
 9. Upload the training dataset into the classification learner app.
+ 
 10. Train your SVM model generated from your reference dataset. Used the Bayesian Optimization over 30 iterations with 5 cross validation or use this classifier. You can perform this manually or us can employ this code:
     
 [run_train_model.m](/run_train_model.m) - A function for generating the model
