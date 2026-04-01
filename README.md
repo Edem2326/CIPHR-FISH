@@ -42,29 +42,28 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...).
 6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
 
-
 #### B. Model generation
-9. Upload the training dataset (reference) into your workspace.
-10. In the app menu, select classification learner app.
-11. Upload the training dataset into the classification learner app.
-12. Train your SVM model generated from your reference dataset. Used the Bayesian Optimization over 30 iterations with 5 cross validation or use this classifier. You can perform this manually or us can employ this code:
+7. Upload the training dataset (reference) into your workspace.
+8. In the app menu, select classification learner app.
+9. Upload the training dataset into the classification learner app.
+10. Train your SVM model generated from your reference dataset. Used the Bayesian Optimization over 30 iterations with 5 cross validation or use this classifier. You can perform this manually or us can employ this code:
     
 [run_train_model.m](/run_train_model.m) - A function for generating the model
 
-13. The model will be exported and saved in your output directory your training model as a `trainedModel.mat` file.
+11. The model will be exported and saved in your output directory your training model as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
 
 #### CIPHR Classification in *MATLAB*
-14. Upload the saved model to the workspace and apply it to classify the test images.
+12. Upload the saved model to the workspace and apply it to classify the test images.
     
-15. Use this code for classification of test images.
+13. Use this code for classification of test images.
 
 [predict_image.m](/predict_image.m) - for classifying the test image
 
-16. Image outputs 10 independent channels (each representing one microbial taxa).
+14. Image outputs 10 independent channels (each representing one microbial taxa).
 
 ### Image postprocessing and color assignments in *FIJI*
-17. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification.
+15. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification.
 
 ----------------------------------------------------------------------
 ### Contributors
