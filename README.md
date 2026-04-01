@@ -2,8 +2,10 @@
 
 
 This repository contains the codes and link to reference and test images for implementing CIPHR-FISH analysis workflows and reproduce figures in the manuscript.
+-------------------------------------------------------------------
 
 MATLAB version R2021b Update 6 (9.11.0.2207237), 64 bits (maci64), February 23, 2023
+-------------------------------------------------------------------
 
 ### To cite this work
 Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual, D., Audrain, B., Orsino, A., Farnsworth, D., Ghigo, J-M., Valm, AM. (2026) Cross Hybridization Inference for Phylogenetic Resolution (CIPHR)- FISH enables microbiome imaging with strain level taxonomic resolution ......
