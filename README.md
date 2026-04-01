@@ -16,7 +16,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 -------------------------------------------------------------
 #### STEP by STEP
 
-- Download the MATLAB scripts: Place all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`)
+- Download the MATLAB scripts: Place all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`).
   
 - Download the data: Download the dataset and place it in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620). 
   
@@ -28,18 +28,18 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 #### Training and model generation in *MATLAB*
 
 #### A. Training data extraction
-1. Use these functions to read your image files and extract your foreground pixels
+1. Use these functions to read your image files and extract your foreground pixels.
    
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multiple tiff files in the data set
 
-2. Load/Read reference images as multiTifffiles (E.g. Acav_train_M2_new, Aver1_train_M2_new,....)
-3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....)
+2. Load/Read reference images as multiTifffiles (E.g. Acav_train_M2_new, Aver1_train_M2_new,....).
+3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....).
 
-4.Use this code to extract the foreground pixel information into an array and add the label 
+4.Use this code to extract the foreground pixel information into an array and add the label. 
 
 [build_training_set.m](/build_training_set.m) - a function for extracting and saving all your training data set and compiling it not a single table/matrix for model training.
    
-5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...)
+5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...).
 6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
 
 
@@ -61,19 +61,17 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 
 [predict_image.m](/predict_image.m) - for classifying the test image
 
-16. Image outputs 10 independent channels (each representing one microbial taxa)
+16. Image outputs 10 independent channels (each representing one microbial taxa).
 
 ### Image postprocessing and color assignments in *FIJI*
-17. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification
+17. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification.
 
 ----------------------------------------------------------------------
 ### Contributors
-- [Emmanuel Edem Adade](https://github.com/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implementation
+- [Emmanuel Edem Adade](https://github.com/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implementation.
 - [Colin M Henneberry](https://github.com/cmhen) – Conceptualization, writing code & algorithm development
-- Alex Valm – Conceptualization & Supervision 
+- Alex Valm – Conceptualization & Supervision. 
 
-
-We thank [Ruogu Wang](https://github.com/WANGRUOGU) and Alex A Lemus for discussions and technical assistance.
-
+---------------------------------------------------------------------------
 ### Licensing
 This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). Commercial use requires explicit written permission from the authors.
