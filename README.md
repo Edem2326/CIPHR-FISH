@@ -14,7 +14,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 *CIPHR-FISH is a multiplex fluorescence in situ hybridization (FISH)* framework designed to enhance phylogenetic resolution in spatial microbial imaging. Rather than treating probe cross-hybridization and spectral overlap as noise, CIPHR-FISH leverages structured signal patterns across multiplex probe panels to improve discrimination among closely related bacterial taxa.
 
 -------------------------------------------------------------
-# STEP by STEP
+#### STEP by STEP
 
 - Download the MATLAB scripts: Place all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`)
   
@@ -27,7 +27,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 
 #### STEP by STEP
 
-# Training data extraction
+#### Training data extraction
 1. Use these functions to read your image files and extract your foreground pixels
    
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multiple tiff files in the data set
@@ -43,7 +43,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
 
 
-# Model generation
+#### Model generation
 9. Upload the training dataset (reference) into your workspace.
 10. Download Classification learner from the Machine Learning and Deep Learning Toolkit for MATLAB App.
 11. Upload the training dataset into the classification learner app.
