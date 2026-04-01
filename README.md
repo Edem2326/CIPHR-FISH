@@ -16,19 +16,19 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 -------------------------------------------------------------
 #### STEP by STEP
 
-- Download the MATLAB scripts: Place all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`).
+- Download all attached MATLAB codes: Save all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`).
   
-- Download the data: Download the dataset and place it in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset]([https://doi.org/10.5281/zenodo.18791620](https://zenodo.org/uploads/18791620?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3NTAwNDU2OCwiZXhwIjoxNzc3NTkzNTk5fQ.eyJpZCI6IjNlMmI2YmYzLTMzYWYtNGQzNi1hYjFjLThhNDFmMzZkYTEyYSIsImRhdGEiOnt9LCJyYW5kb20iOiI3NTA1YjgxZjk5MGQwMTFlYzAwZjI5Y2ZjZDI5ZGU2ZiJ9.0GPO8Ap54H6HPLV0EoT6MoX68cBLGy0OuxD7bUhVgzoIDLhcmT9BBb4yvcFwqZxL5y7NgggzUdJbM_iYCGKoJg). 
+- Download and save all images in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset]([https://doi.org/10.5281/zenodo.18791620](https://zenodo.org/uploads/18791620?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3NTAwNDU2OCwiZXhwIjoxNzc3NTkzNTk5fQ.eyJpZCI6IjNlMmI2YmYzLTMzYWYtNGQzNi1hYjFjLThhNDFmMzZkYTEyYSIsImRhdGEiOnt9LCJyYW5kb20iOiI3NTA1YjgxZjk5MGQwMTFlYzAwZjI5Y2ZjZDI5ZGU2ZiJ9.0GPO8Ap54H6HPLV0EoT6MoX68cBLGy0OuxD7bUhVgzoIDLhcmT9BBb4yvcFwqZxL5y7NgggzUdJbM_iYCGKoJg). Name each folder appropriately (E.g. reference, ref_mask, test, test_masks) 
   
-- *Save in the same folder/directory (locally) to implement the test dataset.*
+- *Save in the same folder/directory (locally).*
 
-- Download Classification learner from the Machine Learning and Deep Learning Toolkit for MATLAB App.
+- In MATLAB, download Classification learner app from the Machine Learning and Deep Learning Toolkit for MATLAB App.
 -------------------------------------------------------------
 
 #### Training and model generation in *MATLAB*
 
 #### A. Training data extraction
-1. Use these functions to read your image files and extract your foreground pixels.
+1. Use this function to read your image files.
    
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multiple tiff files in the data set
 
@@ -36,18 +36,18 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
    
 3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....).
 
-4.Use this code to extract the foreground pixel information into an array and add the label. 
+4.Use this code to extract the foreground pixels intensity information. 
 
 [build_training_set.m](/build_training_set.m) - a function for extracting and saving all your training data set and compiling it not a single table/matrix for model training.
    
 5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...).
  
-6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
+6. The output table (82 predictors and 10 unique classes) will be exported and saved into a separate output folder in the directory as a .csv file.
 
 #### B. Model generation
-7. Upload the training dataset (reference) into your workspace.
+7. Upload the training dataset (reference) into your MATLAB workspace.
    
-8. In the app menu, select classification learner app.
+8. In the app menu, select the classification learner app.
  
 9. Upload the training dataset into the classification learner app.
  
@@ -65,10 +65,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 
 [predict_image.m](/predict_image.m) - for classifying the test image
 
-14. Image outputs 10 independent channels (each representing one microbial taxa).
-
-### Image postprocessing and color assignments in *FIJI*
-15. Images are stacked together in FIJI and opened in Image5D plugin for coloring and quantification.
+14. Image outputs will correspond to 10 independent images (each representing one microbial taxa).
 
 ----------------------------------------------------------------------
 ### Contributors
