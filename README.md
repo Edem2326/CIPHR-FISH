@@ -19,15 +19,15 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 - Download the MATLAB scripts: Place all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`)
   
 - Download the data: Download the dataset and place it in a folder named data inside the corresponding folder [CIPHR-FISH Validation Dataset](https://doi.org/10.5281/zenodo.18791620). 
-
+  
 - *Save in the same folder/directory (locally) to implement the test dataset.*
+
+- Download Classification learner from the Machine Learning and Deep Learning Toolkit for MATLAB App.
 -------------------------------------------------------------
 
 #### Training and model generation in *MATLAB*
 
-#### STEP by STEP
-
-#### Training data extraction
+#### A. Training data extraction
 1. Use these functions to read your image files and extract your foreground pixels
    
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multiple tiff files in the data set
@@ -43,9 +43,9 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 6. The output table (predictors and 10 unique classes) is exported and saved into a separate output folder in the directory as a .csv file.
 
 
-#### Model generation
+#### B. Model generation
 9. Upload the training dataset (reference) into your workspace.
-10. Download Classification learner from the Machine Learning and Deep Learning Toolkit for MATLAB App.
+10. In the app menu, select classification learner app.
 11. Upload the training dataset into the classification learner app.
 12. Train your SVM model generated from your reference dataset. Used the Bayesian Optimization over 30 iterations with 5 cross validation or use this classifier. You can perform this manually or us can employ this code:
     
