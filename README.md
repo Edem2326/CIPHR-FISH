@@ -36,7 +36,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
    
 3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....).
 
-4.Use this code to extract the foreground pixels intensity information. 
+4. Use this code to extract the foreground pixels intensity information. 
 
 [build_training_set.m](/build_training_set.m) - a function for extracting and saving all your training data set and compiling it not a single table/matrix for model training.
    
