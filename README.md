@@ -50,7 +50,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 5. The model will be exported and saved in your output directory as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
 
-#### C. CIPHR Classification in *MATLAB*
+#### CIPHR Classification in *MATLAB*
 6. Open the .m file:
    
 [predict_image.m](/predict_image.m) - for classifying the test image
