@@ -16,10 +16,9 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 -------------------------------------------------------------
 #### STEP by STEP
 
-<<<<<<< HEAD
 - Create a root directory and name it.
 - Create a subdirectory in the root directory and name it "codes."
-- Download the MATLAB code .mfiles and and save all the code files in the "codes" directory: (`build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`, `trainClassier.m`).
+- Download the MATLAB code .mfiles and and save all the code files in the "codes" directory: (`build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`, `trainClassifier.m`).
   
 - Download and save all example image files from Zenodo: [CIPHR-FISH Validation Dataset]([https://doi.org/10.5281/zenodo.18791620](https://zenodo.org/uploads/18791620?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3NTAwNDU2OCwiZXhwIjoxNzc3NTkzNTk5fQ.eyJpZCI6IjNlMmI2YmYzLTMzYWYtNGQzNi1hYjFjLThhNDFmMzZkYTEyYSIsImRhdGEiOnt9LCJyYW5kb20iOiI3NTA1YjgxZjk5MGQwMTFlYzAwZjI5Y2ZjZDI5ZGU2ZiJ9.0GPO8Ap54H6HPLV0EoT6MoX68cBLGy0OuxD7bUhVgzoIDLhcmT9BBb4yvcFwqZxL5y7NgggzUdJbM_iYCGKoJg).
   
@@ -31,111 +30,34 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 - Move all image files that contain "test_M2_data" in their names into the folder named, "test."
 - Move all image files that contain "test_M2_mask" in their names into the folder named, "test_masks."
 
-- Download all attached MATLAB codes: Save all the code files in a named folder, (E.g. `build_training_set.m`,`readMultiPageTIff.m`,`run_train_model.m`, `predict_image.m`).
-
-- In MATLAB, download Classification learner app from the Machine Learning and Deep Learning Toolkit for MATLAB App.
+- In MATLAB, download Classification learner app from the machine learning and deep learning toolkit for MATLAB App.
 -------------------------------------------------------------
 
-
 #### Training and model generation in *MATLAB*
 
 #### A. Training data extraction
-1. Use this function to read your image files.
+1. Use this function to read your image files:
    
 [readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multi-channel tiff stacks into MATLAB.
 
 2. Open the .m file named "[build_training_set.m](/build_training_set.m)
 
-3. Run the code to Read all reference images and image masks and extract the foreground pixels. The code will generate an output directory named "output" and the data will be saved in a table for model training, named "Trainingdataset.csv" with 82 predictors and 10 unique classes.
+3. Run the code to read all reference images and image masks and extract the foreground pixels. The code will generate an output directory named "output" and the data will be saved in a table for model training, named "Trainingdataset.csv" with 82 predictors and 10 unique classes.
 
 #### B. Model generation
-7. Open the .m file named "run_train_model" to train the SVM model with Bayesian optimization over 30 iterations with 5-fold cross validation.
+4. Open the .m file named "run_train_model" to train the SVM model with Bayesian optimization over 30 iterations with 5-fold cross validation.
 
-8. The model will be exported and saved in your output directory as a `trainedModel.mat` file.
+5. The model will be exported and saved in your output directory as a `trainedModel.mat` file.
 -----------------------------------------------------------------------
 
-#### CIPHR Classification in *MATLAB*
-9. Open the .m file:
-
+#### C. CIPHR Classification in *MATLAB*
+6. Open the .m file:
+   
 [predict_image.m](/predict_image.m) - for classifying the test image
 
-10. This code will classify one example labeled data image set, "Acav." To classify other image data sets with the saved model, edit the code.
+7. This code will classify one example labeled data image set, "Acav." To classify other image data sets with the saved model, edit the code.
 
-11. The output will be a set of 10 tiff images with pixel values greater than zero for that class and intensity assigned as a function of the original image. Prediction summary will be displayed in the MATLAB Command Window.
-
-----------------------------------------------------------------------
-### Contributors
-- [Emmanuel Edem Adade](https://github.com/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implementation.
-- [Colin M Henneberry](https://github.com/cmhen) – Conceptualization, writing code & algorithm development
-- Alex Valm – Conceptualization & Supervision. 
-
----------------------------------------------------------------------------
-### Licensing
-This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). Commercial use requires explicit written permission from the authors.
-
-
-#### Training and model generation in *MATLAB*
-
-#### A. Training data extraction
-1. Use this function to read your image files.
-   
-[readMultipageTiff.m](/readMultipageTiff.m) - a function for reading multi-channel tiff stacks into MATLAB.
-
-<<<<<<< HEAD
-2. Open the .m file named "[build_training_set.m](/build_training_set.m)
-
-3. Run the code to Read all reference images and image masks and extract the foreground pixels. The code will generate an output directory named "output" and the data will be saved in a table for model training, named "Trainingdataset.csv" with 82 predictors and 10 unique classes.
-
-#### B. Model generation
-7. Open the .m file named "run_train_model" to train the SVM model with Bayesian optimization over 30 iterations with 5-fold cross validation.
-
-8. The model will be exported and saved in your output directory as a `trainedModel.mat` file.
------------------------------------------------------------------------
-
-#### CIPHR Classification in *MATLAB*
-9. Open the .m file:
-
-[predict_image.m](/predict_image.m) - for classifying the test image
-
-10. This code will classify one example labeled data image set, "Acav." To classify other image data sets with the saved model, edit the code.
-
-11. The output will be a set of 10 tiff images with pixel values greater than zero for that class and intensity assigned as a function of the original image. Prediction summary will be displayed in the MATLAB Command Window.
-=======
-2. Load/Read reference images as multiTifffiles (E.g. Acav_train_M2_new, Aver1_train_M2_new,....).
-   
-3. Load/Read the reference binary/mask images (E.g. Acav_train_M2_new_BW, Aver1_train_M2_new_BW,....).
-
-4. Use this code to extract the foreground pixels intensity information. 
-
-[build_training_set.m](/build_training_set.m) - a function for extracting and saving all your training data set and compiling it not a single table/matrix for model training.
-   
-5. Extract and store the pixel information into a table and add the labels (E.g. AcavT, Aver1T...).
- 
-6. The output table (82 predictors and 10 unique classes) will be exported and saved into a separate output folder in the directory as a .csv file.
-
-#### B. Model generation
-7. Upload the training dataset (reference) into your MATLAB workspace.
-   
-8. In the app menu, select the classification learner app.
- 
-9. Upload the training dataset into the classification learner app.
- 
-10. Train your SVM model generated from your reference dataset. Used the Bayesian Optimization over 30 iterations with 5 cross validation or use this classifier. You can perform this manually or us can employ this code:
-    
-[run_train_model.m](/run_train_model.m) - A function for generating the model
-
-11. The model will be exported and saved in your output directory your training model as a `trainedModel.mat` file.
------------------------------------------------------------------------
-
-#### CIPHR Classification in *MATLAB*
-12. Upload the saved model to the workspace and apply it to classify the test images.
-    
-13. Use this code for classification of test images.
-
-[predict_image.m](/predict_image.m) - for classifying the test image
-
-14. Image outputs will correspond to 10 independent images (each representing one microbial taxa).
->>>>>>> 2f27acc799053d462ed8f0c0a1ab26c1e9c1dc7b
+8. The output will be a set of 10 tiff images with pixel values greater than zero for that class and intensity assigned as a function of the original image. Prediction summary will be displayed in the MATLAB Command Window.
 
 ----------------------------------------------------------------------
 ### Contributors
