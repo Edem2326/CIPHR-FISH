@@ -67,7 +67,7 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 ### Contributors
 - [Emmanuel Edem Adade](https://github.com/Edem2326) – Conceptualization, writing code, algorithm development, experimental design & Image implementation.
 - [Colin M Henneberry](https://github.com/cmhen) – Conceptualization, writing code & algorithm development
-- Alex Valm – Conceptualization & Supervision. 
+- [Alex Valm](https://github.com/alexvalm) – Conceptualization & Supervision. 
 
 ---------------------------------------------------------------------------
 ### Licensing
