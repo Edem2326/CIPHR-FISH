@@ -22,7 +22,8 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 - Download the MATLAB code .mfiles and and save all the code files in the "codes" directory: ("build_training_set.m", "readMultiPageTIff.m","run_train_model.m", "predict_image.m", "trainClassifier.m").
   
 - Download and save all example image files from Zenodo: [CIPHR-FISH Validation Dataset]([https://doi.org/10.5281/zenodo.18791620](https://zenodo.org/uploads/18791620?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3NTAwNDU2OCwiZXhwIjoxNzc3NTkzNTk5fQ.eyJpZCI6IjNlMmI2YmYzLTMzYWYtNGQzNi1hYjFjLThhNDFmMzZkYTEyYSIsImRhdGEiOnt9LCJyYW5kb20iOiI3NTA1YjgxZjk5MGQwMTFlYzAwZjI5Y2ZjZDI5ZGU2ZiJ9.0GPO8Ap54H6HPLV0EoT6MoX68cBLGy0OuxD7bUhVgzoIDLhcmT9BBb4yvcFwqZxL5y7NgggzUdJbM_iYCGKoJg).
-Create a subfolder in the root directory and name it "data."
+  
+- Create a subfolder in the root directory and name it "data."
 
 - Create 4 subfolders in the "data" directory and name them "reference," "ref_masks," "test," and "test_masks."
 - Move all image files that contain "train_M2_data" in their names into the folder named, "reference."
