@@ -31,9 +31,6 @@ Adade, EE, Wang, R., Henneberry, CM., Lemus, AA., Stevick, R.J., Pérez-Pascual,
 - Move all image files that contain "test_M2_mask" in their names into the folder named, "test_masks."
 
 - Here is the directory file organisation structure [directory setup](directory_setup.png)
-  
-<img width="482" height="458" alt="file system" src="https://github.com/user-attachments/assets/dc3828b9-630e-43aa-94c4-76d200fc85e0" />
-
 
 
 - In MATLAB, download Classification learner app from the machine learning and deep learning toolkit for MATLAB App.
